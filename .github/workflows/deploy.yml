@@ -25,15 +25,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: npm
+          # no cache here unless you commit a lockfile
 
-      - name: Install
+      - name: Install deps
         run: npm install --no-audit --fund=false
 
       - name: Build
         run: npm run build
 
-      # 👇 SPA fallback so refresh on nested routes works on GitHub Pages
       - name: SPA fallback
         run: cp dist/index.html dist/404.html
 
