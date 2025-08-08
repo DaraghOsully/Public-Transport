@@ -1,6 +1,6 @@
 # THA25 – Ireland Public Transport Explorer (Vite + React)
 
-A minimal web app that fetches **THA25** from the **CSO PxStat** API (or accepts a CSV export) to show historical/current public transport usage in Ireland, plus simple projections.
+A change minimal web app that fetches **THA25** from the **CSO PxStat** API (or accepts a CSV export) to show historical/current public transport usage in Ireland, plus simple projections.
 
 ## Quick Start ( easiest path )
 
