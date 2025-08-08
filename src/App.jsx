@@ -3,6 +3,14 @@ import {
   LineChart, Line, XAxis, YAxis, Tooltip, Legend,
   ResponsiveContainer, CartesianGrid, AreaChart, Area
 } from 'recharts'
+// --- Demo fallback so the app is never blank ---
+const DEMO_SERIES = [
+  { year: 2011, "Public transport": 270000, "Bus": 210000, "Train, DART or LUAS": 60000 },
+  { year: 2016, "Public transport": 300000, "Bus": 235000, "Train, DART or LUAS": 65000 },
+  { year: 2022, "Public transport": 280000, "Bus": 215000, "Train, DART or LUAS": 65000 },
+  { year: 2023, "Public transport": 320000, "Bus": 245000, "Train, DART or LUAS": 75000 },
+  { year: 2024, "Public transport": 340000, "Bus": 255000, "Train, DART or LUAS": 85000 },
+];
 
 // --- Types (informal JS-style) ---
 // We keep JS (not TS) for simplicity.
